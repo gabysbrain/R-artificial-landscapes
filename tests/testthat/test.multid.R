@@ -20,8 +20,8 @@ test_that("the rosenbrock function is properly vectorized", {
 })
 
 test_that("the spherical function is properly vectorized", {
-  expect_equal(length(sphere(mtx)), 2)
-  expect_equal(length(sphere(vect)), 1)
+  expect_equal(length(spherical(mtx)), 2)
+  expect_equal(length(spherical(vect)), 1)
 })
 
 test_that("the schwefel function is properly vectorized", {

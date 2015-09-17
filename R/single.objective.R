@@ -9,7 +9,7 @@ rosenbrock = opt.vect(function(x) {
   sum((1-xi)**2 + 100 * (xi.1 - xi**2)**2)
 })
 
-sphere = opt.vect(function(x) {
+spherical = opt.vect(function(x) {
   sum(x**2)
 })
 

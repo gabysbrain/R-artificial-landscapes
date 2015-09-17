@@ -2,15 +2,15 @@
 # TODO: make this automatically if possible
 # TODO: more function info perhaps?
 functions <- list(
-  ackley=list(function=ackley,
+  ackley=list(func=ackley,
               domain=list(min=-5, max=5)),
-  rosenbrock=list(function=rosenbrock,
+  rosenbrock=list(func=rosenbrock,
                   domain=list(min=-5, max=5)),
-  sphere=list(function=sphere,
-              domain=list(min=-5, max=5)),
-  schwefel=list(function=schwefel,
+  spherical=list(func=spherical,
+                 domain=list(min=-5, max=5)),
+  schwefel=list(func=schwefel,
                 domain=list(min=-5, max=5)),
-  zakharov=list(function=zakharov,
+  zakharov=list(func=zakharov,
                 domain=list(min=-5, max=5))
 )
 
