@@ -11,3 +11,4 @@ Suggests: testthat
 Collate:
   'vectorize.R'
   'single.objective.R'
+

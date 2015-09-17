@@ -1,5 +1,5 @@
 library(artificial.landscapes)
-context("vectorization")
+context("vectorization of functions")
 
 vect = c(1,2,3,4,5,6)
 mtx = array(c(1,2,3,4,5,6), dim=c(2,3))
