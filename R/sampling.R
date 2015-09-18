@@ -23,7 +23,8 @@ sample.func <- function(FUN.name, n, k, method="lhs.sample", ...) {
   func.info <- get_info(FUN.name)
   func <- func.info$func
   func.domain <- func.info$domain
-  Y <- func(map.range(X, func.domain$min, func.domain$max), ...)
+  X <- map.range(X, func.domain$min, func.domain$max)
+  Y <- func(X, ...)
   X.df <- data.frame(X)
   names(X.df) <- str_c("x", 1:k)
   Y.df <- data.frame(Y)
