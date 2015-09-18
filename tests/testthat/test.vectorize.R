@@ -1,4 +1,4 @@
-library(artificial.landscapes)
+library(optim.functions)
 context("vectorization argument passing")
 
 test_that("The vectorize function correctly passes additional arguments", {

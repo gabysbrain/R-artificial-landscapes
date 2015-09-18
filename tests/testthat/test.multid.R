@@ -1,4 +1,4 @@
-library(artificial.landscapes)
+library(optim.functions)
 context("vectorization of functions")
 
 vect = c(1,2,3,4,5,6)

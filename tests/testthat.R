@@ -1,4 +1,4 @@
 library(testthat)
-library(artificial.landscapes)
+library(optim.functions)
 
-test_check("artificial.landscapes")
+test_check("optim.functions")

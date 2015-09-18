@@ -1,4 +1,4 @@
-Package: artificial.landscapes
+Package: optim.functions
 Title: Standard benchmark optimization functions
 Version: 0.1
 Authors@R: person("Thomas", "Torsney-Weir", email="torsneyt@gmail.com",

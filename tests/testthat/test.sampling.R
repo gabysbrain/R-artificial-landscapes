@@ -1,4 +1,4 @@
-library(artificial.landscapes)
+library(optim.functions)
 context("function sampling")
 
 test_that("cartesian sampling generates the correct shape of samples", {
