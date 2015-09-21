@@ -5,7 +5,6 @@ cd
 # install/setup Renv
 git clone git://github.com/viking/Renv.git .Renv
 echo 'eval "$(Renv init -)"' >> ~/.bash_profile
-exec $SHELL
 
 # install R-build
 mkdir -p ~/.Renv/plugins
