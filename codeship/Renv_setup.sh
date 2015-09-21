@@ -11,5 +11,5 @@ mkdir -p ~/.Renv/plugins
 cd ~/.Renv/plugins
 git clone git://github.com/viking/R-build.git
 
-Renv install 3.2.2
+Renv install 3.2.0
 
