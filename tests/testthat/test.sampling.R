@@ -11,7 +11,7 @@ test_that("sampling a function works as expected", {
 })
 
 test_that("sampling the spherical function uses the correct range", {
-  sampled.func <- sample.func("spherical", 10, 3, "lh.sample")
+  sampled.func <- sample.func("spherical", 5, 3, "cartesian.sample")
   expect_true(min(sampled.func$x1) >= -5 && min(sampled.func$x1) < 0)
   expect_true(max(sampled.func$x1) <= 5  && max(sampled.func$x1) > 1)
 })
