@@ -18,6 +18,21 @@ map.range <- function(x, rng.min, rng.max, dom.min=0, dom.max=1) {
   (x-dom.min) / (dom.max-dom.min) * (rng.max-rng.min) + rng.min
 }
 
+#' Unified function sampling interface.
+#' 
+#' Provides a unified interface to sampling all functions. One just needs to
+#' specify the name of the function to sample, the number of samples, the
+#' dimensionality, and the sampling method and the library will take care
+#' of the rest.
+#' 
+#' @param FUN.name The name of the function to sample.
+#' @param n        The number of sample points.
+#' @param k        The number of dimensions to sample.
+#' @param method   The sampling method.
+#' @param ....     Additional arguments passed to \code{FUN.name}.
+#' @return         A data frame consisting of n rows with columns x1..xk and 
+#'                 y1..yz where z is the number of outputs of the function.
+#' @export
 sample.func <- function(FUN.name, n, k, method="lhs.sample", ...) {
   X <- match.fun(method)(n, k)
   func.info <- get_info(FUN.name)
