@@ -8,7 +8,9 @@ Description: A set of standard benchmark optimization functions for R and
 Depends: R (>= 3.0)
 License: MIT
 LazyData: true
-Suggests: testthat
+Suggests: 
+  testthat,
+  covr
 Depends:
   R (>= 3.0)
 Imports:
