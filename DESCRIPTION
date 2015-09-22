@@ -17,6 +17,7 @@ Imports:
   lhs,
   stringr
 Collate:
+  'optim-functions.R'
   'vectorize.R'
   'sampling.R'
   'single.objective.R'
