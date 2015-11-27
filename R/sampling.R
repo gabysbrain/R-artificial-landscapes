@@ -13,6 +13,13 @@ cartesian.sample <- function(n,k) {
   do.call(expand.grid, rep(list(nums), k))
 }
 random.sample <- function(n,k) matrix(runif(n*k), nrow=n, ncol=k)
+hexagonal.sample <- function(n,k) {
+  if(k != 2) stop("cannot do hexagonal sampling on k!=2 dimensions")
+  c <- cartesian.sample(n, 2)
+  V <- array(c(1, 0, 0.5, sqrt(3)/2), c(2,2))
+  pts <- t(as.matrix(V %*% t(c)))
+  unique(pts %% 1) # wrap everything
+}
 
 map.range <- function(x, rng.min, rng.max, dom.min=0, dom.max=1) {
   (x-dom.min) / (dom.max-dom.min) * (rng.max-rng.min) + rng.min
