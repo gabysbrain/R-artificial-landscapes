@@ -1,5 +1,6 @@
 
 library(lhs)
+library(randtoolbox)
 library(stringr)
 
 # The sampling function takes (n, k) where n is the number of samples
@@ -20,6 +21,9 @@ hexagonal.sample <- function(n,k) {
   pts <- t(as.matrix(V %*% t(c)))
   unique(pts %% 1) # wrap everything
 }
+torus.sample <- function(n,k,...) torus(n, k, ...)
+sobol.sample <- function(n,k,...) sobol(n, k, ...)
+halton.sample <- function(n,k,...) halton(n, k, ...)
 
 map.range <- function(x, rng.min, rng.max, dom.min=0, dom.max=1) {
   (x-dom.min) / (dom.max-dom.min) * (rng.max-rng.min) + rng.min
