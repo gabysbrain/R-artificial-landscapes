@@ -9,7 +9,9 @@ functions <- list(
   spherical=list(func=spherical,
                  domain=list(min=-5, max=5)),
   schwefel=list(func=schwefel,
-                domain=list(min=-5, max=5)),
+                domain=list(min=-500, max=500)),
+  sinc=list(func=sinc,
+            domain=list(min=-20, max=20)),
   zakharov=list(func=zakharov,
                 domain=list(min=-5, max=5))
 )

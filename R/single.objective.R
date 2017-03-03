@@ -17,6 +17,10 @@ schwefel <- opt.vect(function(x) {
   418.9829 * length(x) - sum(x*sin(sqrt(abs(x))))
 })
 
+sinc <- opt.vect(function(x) {
+  prod(ifelse(x!=0,sin(x)/x,1))
+})
+
 ackley <- opt.vect(function(x, a, b, c) {
   -a * exp(-b * sqrt(1/length(x) * sum(x**2))) - 
     exp(1/length(x) * sum(cos(c*x))) + a + exp(1)
