@@ -44,8 +44,8 @@ map.range <- function(x, rng.min, rng.max, dom.min=0, dom.max=1) {
 #' @return         A data frame consisting of n rows with columns x1..xk and 
 #'                 y1..yz where z is the number of outputs of the function.
 #' @export
-sample.func <- function(FUN.name, n, k, method="lhs.sample", ...) {
-  X <- match.fun(method)(n, k)
+sample.func <- function(FUN.name, n, k, method="lh.sample", ...) {
+  X <- match.fun(method)(n, k, seed=0)
   func.info <- get_info(FUN.name)
   func <- func.info$func
   func.domain <- func.info$domain
