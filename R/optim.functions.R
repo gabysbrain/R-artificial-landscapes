@@ -1,5 +1,5 @@
 
-#' optim-functions: A collection of standard optimization functions along with
+#' optim.functions: A collection of standard optimization functions along with
 #'                  a standard interface to call and sample those functions.
 #'
 #' @section Sampling functions:
@@ -8,6 +8,9 @@
 #' the number of dimensions to sample. They all return a matrix-like object
 #' containing \code{n} rows of \code{k} columns of samples.
 #' 
+#' The main interface to this library is through the
+#' \code{\link{sample.func}} function.
+#' 
 #' @docType package
-#' @name optim-functions
+#' @name optim.functions
 NULL

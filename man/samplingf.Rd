@@ -33,7 +33,7 @@ halton.sample(n, k, ...)
 
 \item{k}{The number of dimensions.}
 
-\item{....}{Additional arguments for the sampling (e.g. \code{seed}).}
+\item{...}{Additional arguments for the sampling (e.g. \code{seed}).}
 }
 \description{
 The sampling functions take (n, k) where n is the number of samples

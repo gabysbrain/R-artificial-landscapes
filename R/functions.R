@@ -16,6 +16,10 @@ functions <- list(
                 domain=list(min=-5, max=5))
 )
 
+#' Lookup information about a function by name
+#' 
+#' @param fun.name Function name to lookup
+#' @export
 get_info <- function(fun.name) {
   # TODO: check for correct name
   functions[[fun.name]]
