@@ -60,7 +60,7 @@ map.range <- function(x, rng.min, rng.max, dom.min=0, dom.max=1) {
 #' @param n        The number of sample points.
 #' @param k        The number of dimensions to sample.
 #' @param method   The sampling method.
-#' @param ....     Additional arguments passed to \code{FUN.name}.
+#' @param ...      Additional arguments passed to \code{FUN.name}.
 #' @return         A data frame consisting of n rows with columns x1..xk and 
 #'                 y1..yz where z is the number of outputs of the function.
 #' @export

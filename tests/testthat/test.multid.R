@@ -5,8 +5,9 @@ vect = c(1,2,3,4,5,6)
 mtx = array(c(1,2,3,4,5,6), dim=c(2,3))
 
 test_that("the general vectorization function works", {
-  expect_equal(length(opt.vect(sum)(mtx)), 2) # nrow(mtx)
-  expect_equal(length(opt.vect(sum)(vect)), 1)
+  mysum = function(x) sum(x)
+  expect_equal(length(opt.vect(mysum)(mtx)), 2) # nrow(mtx)
+  expect_equal(length(opt.vect(mysum)(vect)), 1)
 })
 
 test_that("the ackley function is properly vectorized", {

@@ -15,7 +15,7 @@ sample.func(FUN.name, n, k, method = "lh.sample", ...)
 
 \item{method}{The sampling method.}
 
-\item{....}{Additional arguments passed to \code{FUN.name}.}
+\item{...}{Additional arguments passed to \code{FUN.name}.}
 }
 \value{
 A data frame consisting of n rows with columns x1..xk and 

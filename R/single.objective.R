@@ -21,10 +21,13 @@ sinc <- opt.vect(function(x) {
   prod(ifelse(x!=0,sin(x)/x,1))
 })
 
-ackley <- opt.vect(function(x, a, b, c) {
+ackley <- opt.vect(function(x) {
+  a=20
+  b=0.2
+  c=2*pi
   -a * exp(-b * sqrt(1/length(x) * sum(x**2))) - 
     exp(1/length(x) * sum(cos(c*x))) + a + exp(1)
-}, a=20, b=0.2, c=2*pi)
+})
 
 zakharov <- opt.vect(function(x) {
   sum(x**2) + (sum(0.5 * x * (1:length(x))))**2 + 
