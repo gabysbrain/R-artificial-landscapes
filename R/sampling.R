@@ -2,6 +2,7 @@
 library(lhs)
 library(randtoolbox)
 library(stringr)
+library(stats)
 
 #' The sampling functions take (n, k) where n is the number of samples
 #' and k is the number of dimensions. The sampling functions should return
@@ -25,7 +26,7 @@ cartesian.sample <- function(n,k,...) {
 }
 #' @rdname samplingf
 #' @export
-random.sample <- function(n,k,...) matrix(runif(n*k), nrow=n, ncol=k)
+random.sample <- function(n,k,...) matrix(stats::runif(n*k), nrow=n, ncol=k)
 #' @rdname samplingf
 #' @export
 hexagonal.sample <- function(n,k,...) {

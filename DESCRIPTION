@@ -15,6 +15,7 @@ Suggests:
 Imports:
     lhs,
     randtoolbox,
+    stats,
     stringr
 Collate:
     'optim.functions.R'
